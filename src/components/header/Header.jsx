@@ -1,9 +1,29 @@
-import React from 'react'
+import React from "react";
 
-const Header = () => {
+import "./Header.scss"
+
+const Header = ({categorieS}) => {
+  // const {categories}=props
+
   return (
-    <div>Header</div>
-  )
-}
+  <div className="header" >
+    <h1>Product List</h1>
+    <div className="btnDiv">
+      {
+        categorieS.map((a,i)=>(
+          <button key={i} > 
+            {a}
+          </button>
+        ))
+      }
+    </div>
 
-export default Header
+  </div>
+  );
+};
+
+export default Header;
+
+
+
+// .map den sonraki ilk div in içine key tanımladığı zaman otomatık olarak kendisi uniq olarak classname atar
