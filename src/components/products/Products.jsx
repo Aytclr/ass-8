@@ -10,7 +10,7 @@ const Products = ({products}) => {
       {
         products.map((ürün)=>(
 
-          <ProductCard key={ürün.id} {...ürün} />
+          <ProductCard key={ürün.id} {...ürün} /> 
           
 
 
@@ -21,3 +21,5 @@ const Products = ({products}) => {
 }
 
 export default Products
+
+//...ürün tüm ürünleri açılır halde props içerisine gönderir
