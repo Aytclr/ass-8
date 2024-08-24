@@ -1,6 +1,8 @@
 import React from 'react'
 import ProductCard from "./ProductCard.jsx"
 
+import "./Products.scss"
+
 const Products = ({products}) => {
   
   return (
